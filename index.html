@@ -6,31 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Store</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Вся видимая область -->
     <div class="wrapper">
 
-        <!-------- Хэдер --------->
-        <header class="header">
-            <div class="header__logo">
-                <img src="icons/Logo.svg" alt="logo" class="logo__img">
-                <p class="logo__text"> PETWORLD </p>
-            </div>
-            <p class="header__text text"> Sign Up</p>
-            <button class="header__btn"> <p class="btn__text text"></p></button>
-        </header>
+        <!-- Ограничение по ширине -->
+        <div class="header__container">
+
+            <!-------- Хэдер --------->
+            <header class="header">
+                <div class="header__logo">
+                    <img src="icons/Logo.svg" alt="logo" class="logo__img">
+                    <p class="logo__text"> PETWORLD </p>
+                </div>
+                <div class="header__auth">
+                    <p class="header__text text"> Sign Up</p>
+                    <button class="header__btn"> <p class="btn__text text"> Log in</p></button>
+                </div>
+            </header>
+
+        </div>
 
         <!-------- Основной блок --------->
         <div class="main">
 
             <!-------- Приветствие --------->
-            <div class="main__hi">
+            <div class="hi__container">
+                <!-- Флекс-контейнер -->
                 <div class="hi__fixed">
                     <!--  Ширина по сетке -->
-                    <p class="hi__title title">Pet Store & Beyond</p>
-                    <p class="hi_text text">This is a sample landing page, created with Figma and Anima. No coding involved.</p>
-                    <button class="hi__button button"> Get Started</button>
+                    <div class="hi__text">
+                        <p class="hi__title title">Pet Store & Beyond</p>
+                        <p class="hi__subtitle text">This is a sample landing page, created with Figma and Anima. No coding involved.</p>
+                        <button class="button"> Get Started</button>
+                    </div>
                     <img src="image/Image.png" alt="" class="hi__img">
                 </div>
             </div>
@@ -42,72 +55,118 @@
 
             <!-------- Преимущества --------->
             <div class="main__features">
-                <img src="icons/Logos group.svg" alt="">
+                <div class="features__sponcores">
+                    <img src="icons/Logos group.svg" alt="" class="">
+                </div>
                 <div class="features__list">
                     <div class="list__fixed">
                         <!--  Ширина по сетке -->
-                        <!--  х4 Итема -->
                         <div class="list__item">
                             <img src="icons/Pet food icon.svg" alt="">
-                            <p class="item__title text">Best quality pet food</p>
-                            <p class="item__subtitle text">Super delicious food. Available in a range of delicious flavors.</p>
+                            <div class="item__text">
+                                <p class="item__title text">Best quality pet food</p>
+                                <p class="item__subtitle text">Super delicious food. Available in a range of delicious flavors.</p>
+                            </div>
+                        </div>
+                        <div class="list__item">
+                            <img src="icons/Accessories icon.svg" alt="">
+                            <div class="item__text">
+                                <p class="item__title text">Toys & Accessories</p>
+                                <p class="item__subtitle text">Soft toys, chew toys, and rope toys. Strong, interactive, and fun.</p>
+                            </div>
+                        </div>
+                        <div class="list__item">
+                            <img src="icons/Medical icon.svg" alt="">
+                            <div class="item__text">
+                                <p class="item__title text">Pets medical care</p>
+                                <p class="item__subtitle text">You can get a wide range of great treatments for your dog.</p>
+                            </div>
+                        </div>
+                        <div class="list__item">
+                            <img src="icons/Grooming icon.svg" alt="">
+                            <div class="item__text">
+                                <p class="item__title text">Full service grooming</p>
+                                <p class="item__subtitle text">It's the right time to groom your dog with a variety of treatments.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-------- Цитата --------->
-            <div class="main__quote">
-                <div class="quote__block">
-                    <img src="image/Image (Desktop).png" alt="">
-                    <div class="quote__text">
-                        <img src="icons/Quote icon.svg" alt="">
-                        <p class="text__b text">We love using 'PETWORLD' products. Environmentally friendly and sustainable. We have the sustainable dog bowls and regularly use the mint scented poo bags which were all such great value for money.</p>
-                        <p class="text__o text">Dylan Shaw</p>
-                    </div>
+        <!-------- Цитата --------->
+        <div class="main__quote">
+            <div class="quote__block">
+                <img src="image/Image (Desktop).png" alt="">
+                <div class="quote__text">
+                    <img src="icons/Quote icon.svg" alt="">
+                    <p class="text__b text">We love using 'PETWORLD' products. Environmentally friendly and sustainable. <br>We have the sustainable dog bowls and regularly use the mint scented poo bags which were all such great value for money.</p>
+                    <p class="text__o text">Dylan Shaw</p>
                 </div>
-            </div>
-
-            <!-------- Свяжись с нами --------->
-            <div class="main__contact">
-                <p class="contact__title title">Let’s talk, woof! </p>
-                <p class="contact_text text">You can ask us questions about your pet, and we will be happy to answer you!</p>
-                <button class="contact__button button">Contact us</button>
-                <img src="image/Image2.png" alt="" class="hi__img">
             </div>
         </div>
+
+        <!-------- Свяжись с нами --------->
+        <div class="main__contact">
+            <div class="contact__text">
+                <p class="contact__title title">Let’s talk, woof! </p>
+                <p class="contact__subtitle text">You can ask us questions about your pet, and we will be happy to answer you!</p>
+                <button class="contact__button button">Contact us</button>
+            </div>
+
+            <img src="image/Image2.png" alt="" class="hi__img">
+        </div>
+
+
         <!-- Футер -->
-        <!-- width > wrapper -->
-        <footer class="footer">
-            <div class="footer__logo">
-                <img src="icons/Logo.svg" alt="logo" class="logo__img">
-                <p class="logo__text"> PETWORLD </p>
-            </div>
-            <div class="footer__input">
-                <label for="email" class="text">Updates right to your Inbox</label>
-                <input type="email" placeholder="Email Address" class="text">
-                <input type="submit" value="Send" class="submit__text text">
-            </div>
+        <!-- width > container -->
+        <div class="container__footer">
+            <footer class="footer">
+                <div class="first__half">
+                    <div class="footer__logo">
+                        <img src="icons/Logo.svg" alt="logo" class="logo__img">
+                        <p class="logo__text"> PETWORLD </p>
+                    </div>
 
-            <div class="footer__privacy">
-                <p class="privacy__text"> Text</p>
-                <p class="privacy__text"> Text</p>
-                <p class="privacy__text"> Text</p>
-            </div>
+                    <div class="footer__input">
+                        <label for="email" class="text">Updates right to your Inbox</label>
+                        <input type="email" placeholder="Email Address" class="placeholder__text">
+                        <input type="submit" value="Send" class="submit__text text">
+                    </div>
 
-            <div class="footer__menu">
-                <!-- x3 колонки текста -->
-                <div class="menu__text">
-                    <p class="text">Text</p>
-                    <p class="text">Text</p>
-                    <p class="text">Text</p>
+                    <div class="footer__privacy">
+                        <p class="privacy__text"> © PETWORLD 2022</p>
+                        <p class="privacy__text"> Privacy policy</p>
+                        <p class="privacy__text"> Terms of use</p>
+                    </div>
                 </div>
-            </div>
+                <div class="second__half">
+                    <div class="footer__menu">
+                        <div class="menu__text">
+                            <p class="text menu__b" style="font-weight: 600;">Our story</p>
+                            <p class="text__item text">FAQ</p>
+                            <p class="text__item text">Contact</p>
+                        </div>
+                        <div class="menu__text">
+                            <p class="text menu__b" style="font-weight: 600;">Pet care</p>
+                            <p class="text__item text">Treatments</p>
+                            <p class="text__item text">Health</p>
+                            <p class="text__item text">Hygiene </p>
+                        </div>
+                        <div class="menu__text">
+                            <p class="text menu__b" style="font-weight: 600;">Shop</p>
+                            <p class="text__item text">Pet Food</p>
+                            <p class="text__item text">Toys</p>
+                            <p class="text__item text">Accessories</p>
+                        </div>
+                    </div>
 
-            <div class="footer__social">
-                <img src="icons/Socials icons.svg" alt="" class="logo__img">
-            </div>
-        </footer>
+                    <div class="footer__social">
+                        <img src="icons/Socials icons.svg" alt="" class="logo__social">
+                    </div>
+                </div>
+            </footer>
+        </div>
     </div>
 </body>
 

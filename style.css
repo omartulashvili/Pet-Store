@@ -1,439 +1,507 @@
-                        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-                        /*Обнуление*/
-                        
-                        * {
-                            padding: 0;
-                            margin: 0;
-                            border: 0;
-                        }
-                        
-                        *,
-                        *:before,
-                        *:after {
-                            -moz-box-sizing: border-box;
-                            -webkit-box-sizing: border-box;
-                            box-sizing: border-box;
-                        }
-                        
-                         :focus,
-                         :active {
-                            outline: none;
-                        }
-                        
-                        a:focus,
-                        a:active {
-                            outline: none;
-                        }
-                        
-                        nav,
-                        footer,
-                        header,
-                        aside {
-                            display: block;
-                        }
-                        
-                        html,
-                        body {
-                            height: 100%;
-                            width: 100%;
-                            font-size: 100%;
-                            line-height: 1;
-                            font-size: 14px;
-                            -ms-text-size-adjust: 100%;
-                            -moz-text-size-adjust: 100%;
-                            -webkit-text-size-adjust: 100%;
-                        }
-                        
-                        input,
-                        button,
-                        textarea {
-                            font-family: inherit;
-                        }
-                        
-                        input::-ms-clear {
-                            display: none;
-                        }
-                        
-                        button {
-                            cursor: pointer;
-                        }
-                        
-                        button::-moz-focus-inner {
-                            padding: 0;
-                            border: 0;
-                        }
-                        
-                        a,
-                        a:visited {
-                            text-decoration: none;
-                        }
-                        
-                        a:hover {
-                            text-decoration: none;
-                        }
-                        
-                        ul li {
-                            list-style: none;
-                        }
-                        
-                        img {
-                            vertical-align: top;
-                        }
-                        
-                        h1,
-                        h2,
-                        h3,
-                        h4,
-                        h5,
-                        h6 {
-                            font-size: inherit;
-                            font-weight: 400;
-                        }
-                        /*--------------------*/
-                        /* -----Вся видимая область----- */
-                        
-                        .wrapper {
-                            max-width: 1280px;
-                            font-family: 'Poppins', sans-serif;
-                            font-size: 18px;
-                            margin: 0 auto;
-                        }
-                        /* Основной блок */
-                        
-                        .header__container {}
-                        /* -----Хэдер----- */
-                        
-                        .header {
-                            display: flex;
-                            justify-content: space-between;
-                            padding: 23px 100px;
-                        }
-                        
-                        .header__logo {
-                            display: flex;
-                            align-items: center;
-                        }
-                        
-                        .header__auth {
-                            display: flex;
-                            align-items: center;
-                            line-height: 178%;
-                        }
-                        
-                        .logo__img {}
-                        
-                        .logo__text {
-                            font-weight: bold;
-                            margin-left: 10px;
-                        }
-                        
-                        .text {
-                            font-family: 'Poppins', sans-serif;
-                            font-size: 18px;
-                        }
-                        
-                        .header__text {
-                            margin-right: 30px;
-                        }
-                        
-                        .header__btn {
-                            padding: 11px 50px;
-                            background-color: #3366FF;
-                            border-radius: 10px;
-                            color: #FFFFFF;
-                        }
-                        
-                        .btn__text {
-                            font-size: 18px;
-                        }
-                        /* -----Основной контент----- */
-                        
-                        .main {}
-                        /* -----Приветственный блок----- */
-                        
-                        .hi__container {
-                            background-color: #F7F5FD;
-                        }
-                        
-                        .hi__fixed {
-                            display: flex;
-                            justify-content: space-between;
-                            padding: 70px 100px;
-                        }
-                        
-                        .title {
-                            font-size: 80px;
-                            line-height: 112%;
-                        }
-                        
-                        .hi__text {
-                            margin-right: 114px;
-                        }
-                        
-                        .hi__subtitle {
-                            color: #2D2D2D;
-                            margin-top: 30px;
-                            padding-bottom: 54.24px;
-                            line-height: 178%;
-                        }
-                        
-                        .button {
-                            font-size: 18px;
-                            margin-top: 41px;
-                            padding: 16px 50px;
-                            border-radius: 10px;
-                            background-color: #F8D57E;
-                        }
-                        
-                        .hi__img {}
-                        /* -----Блок с видео---- */
-                        
-                        .main__video {
-                            background-color: #F2FAF8;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            padding: 70px 0px;
-                        }
-                        /* -----Преимущества----- */
-                        
-                        .main__features {
-                            padding: 0px 90px;
-                        }
-                        
-                        .features__sponcores {
-                            display: flex;
-                            justify-content: center;
-                            padding: 80px 0px;
-                        }
-                        
-                        .features__list {
-                            padding: 116px 0px;
-                        }
-                        
-                        .list__fixed {
-                            display: flex;
-                        }
-                        
-                        .list__item {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            margin-right: 60px;
-                        }
-                        
-                        .list__item:nth-child(4) {
-                            margin-right: 0px;
-                        }
-                        
-                        .item__text {
-                            margin-top: 40px;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                        }
-                        
-                        .item__title {
-                            font-weight: 600;
-                            text-align: center;
-                        }
-                        
-                        .item__subtitle {
-                            color: #2D2D2D;
-                            line-height: 150%;
-                            margin-top: 15px;
-                            text-align: center;
-                        }
-                        /* -----Цитата----- */
-                        
-                        .main__quote {
-                            background-color: #ECE7FB;
-                        }
-                        
-                        .quote__block {
-                            display: flex;
-                            align-items: center;
-                            padding: 50px 224.5px;
-                        }
-                        
-                        .quote__text {
-                            margin-left: 60px;
-                        }
-                        
-                        .text__b {
-                            margin-top: 20px;
-                            line-height: 178%;
-                            font-weight: 600;
-                        }
-                        
-                        .text__o {
-                            margin-top: 40px;
-                            color: #2D2D2D;
-                        }
-                        /* -----Блок "связаться с нами"----- */
-                        
-                        .main__contact {
-                            display: flex;
-                            padding: 60px 160px;
-                        }
-                        
-                        .contact__title {
-                            line-height: 112%;
-                        }
-                        
-                        .contact__subtitle {
-                            margin-top: 30px;
-                            line-height: 178%;
-                        }
-                        
-                        .contact__button {
-                            margin-top: 40px;
-                        }
-                        /* -----Футер----- */
-                        
-                        .container__footer {}
-                        /* Первая часть футера */
-                        
-                        .first__half {
-                            display: flex;
-                            flex-direction: column;
-                        }
-                        
-                        .footer {
-                            display: flex;
-                            padding: 70px 80.5px;
-                        }
-                        
-                        .footer__logo {
-                            display: flex;
-                            align-items: center;
-                        }
-                        
-                        .logo__text {
-                            font-weight: bold;
-                        }
-                        
-                        .footer__input {
-                            margin-top: 75px;
-                        }
-                        
-                        label {
-                            display: block;
-                        }
-                        
-                        input[type="email"] {
-                            border: 1px solid #D0D0D0;
-                            border-radius: 10px;
-                            margin-top: 12px;
-                        }
-                        
-                        .placeholder__text {
-                            padding-top: 11px;
-                            padding-bottom: 11px;
-                            padding-left: 20px;
-                            padding-right: 71px;
-                            font-size: 18px;
-                            color: #2D2D2D;
-                        }
-                        
-                        .submit__text {
-                            padding: 11px 31.5px;
-                            background-color: #3366FF;
-                            color: white;
-                            border-radius: 10px;
-                            margin-left: 20px;
-                        }
-                        
-                        .footer__privacy {
-                            display: flex;
-                            margin-top: 33px;
-                        }
-                        
-                        .privacy__text {
-                            margin-right: 30px;
-                            font-weight: 600;
-                        }
-                        
-                        .privacy__text:nth-child(3) {
-                            margin-right: 0px;
-                        }
-                        /* Вторая часть футера */
-                        
-                        .second__half {
-                            margin-left: 233px;
-                        }
-                        
-                        .footer__menu {
-                            display: flex;
-                        }
-                        
-                        .menu__text {
-                            margin-right: 60px;
-                        }
-                        
-                        .text__item {
-                            padding-top: 16px;
-                        }
-                        
-                        .menu__text:nth-child(3) {
-                            margin-right: 0px;
-                        }
-                        
-                        .footer__social {
-                            margin-top: 99px;
-                        }
-                        
-                        .logo__social {
-                            margin-left: 237px;
-                        }
-                        /* -----Адаптивность----- */
-                        /* 1200px */
-                        
-                        @media screen and (max-width:1200px) {
-                            .wrapper {
-                                max-width: 1140px;
-                            }
-                            .second__half {
-                                margin-left: 100px;
-                            }
-                        }
-                        /* 1199px */
-                        
-                        @media screen and (max-width:1199px) {
-                            .wrapper {
-                                max-width: 960px;
-                            }
-                            .hi__fixed img {
-                                width: 50%;
-                                height: 100%;
-                            }
-                            .quote__block {
-                                padding: 50px 184.5px;
-                            }
-                            .main__contact img {
-                                width: 100%;
-                                height: 100%;
-                            }
-                            .quote__logo {
-                                width: 20%;
-                                height: 100%;
-                            }
-                            .author__img {
-                                width: 40%;
-                                height: 100%;
-                            }
-                        }
-                        /* 991px */
-                        
-                        @media screen and (max-width:991px) {
-                            .wrapper {
-                                width: 720px;
-                            }
-                            .title {
-                                font-size: 60px;
-                            }
-                            .features__sponcores img {
-                                width: 150%;
-                                height: 100%;
-                            }
-                        }
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        /*Обнуление*/
+        
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+         :focus,
+         :active {
+            outline: none;
+        }
+        
+        a:focus,
+        a:active {
+            outline: none;
+        }
+        
+        nav,
+        footer,
+        header,
+        aside {
+            display: block;
+        }
+        
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            font-size: 100%;
+            line-height: 1;
+            font-size: 14px;
+            -ms-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+        
+        input,
+        button,
+        textarea {
+            font-family: inherit;
+        }
+        
+        input::-ms-clear {
+            display: none;
+        }
+        
+        button {
+            cursor: pointer;
+        }
+        
+        button::-moz-focus-inner {
+            padding: 0;
+            border: 0;
+        }
+        
+        a,
+        a:visited {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
+        ul li {
+            list-style: none;
+        }
+        
+        img {
+            vertical-align: top;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: 400;
+        }
+        /*--------------------*/
+        /* -----Вся видимая область----- */
+        
+        .wrapper {
+            max-width: 1280px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            margin: 0 auto;
+        }
+        /* Основной блок */
+        
+        .header__container {}
+        /* -----Хэдер----- */
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 23px 100px;
+        }
+        
+        .header__logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .header__auth {
+            display: flex;
+            align-items: center;
+            line-height: 178%;
+        }
+        
+        .logo__img {}
+        
+        .logo__text {
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        
+        .text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+        }
+        
+        .header__text {
+            margin-right: 30px;
+        }
+        
+        .header__btn {
+            padding: 11px 50px;
+            background-color: #3366FF;
+            border-radius: 10px;
+            color: #FFFFFF;
+        }
+        
+        .btn__text {
+            font-size: 18px;
+        }
+        /* -----Основной контент----- */
+        
+        .main {}
+        /* -----Приветственный блок----- */
+        
+        .hi__container {
+            background-color: #F7F5FD;
+        }
+        
+        .hi__fixed {
+            display: flex;
+            justify-content: space-between;
+            padding: 70px 100px;
+        }
+        
+        .title {
+            font-size: 80px;
+            line-height: 112%;
+        }
+        
+        .hi__text {
+            margin-right: 114px;
+        }
+        
+        .hi__subtitle {
+            color: #2D2D2D;
+            margin-top: 30px;
+            padding-bottom: 54.24px;
+            line-height: 178%;
+        }
+        
+        .button {
+            font-size: 18px;
+            margin-top: 41px;
+            padding: 16px 50px;
+            border-radius: 10px;
+            background-color: #F8D57E;
+        }
+        
+        .hi__img {}
+        /* -----Блок с видео---- */
+        
+        .main__video {
+            background-color: #F2FAF8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 70px 0px;
+        }
+        
+        .video {
+            width: 905px;
+            height: auto;
+        }
+        /* -----Преимущества----- */
+        
+        .main__features {
+            padding: 0px 90px;
+        }
+        
+        .features__sponcores {
+            display: flex;
+            justify-content: center;
+            padding: 80px 0px;
+        }
+        
+        .features__list {
+            padding: 116px 0px;
+        }
+        
+        .list__fixed {
+            display: flex;
+        }
+        
+        .list__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 60px;
+        }
+        
+        .list__item:nth-child(4) {
+            margin-right: 0px;
+        }
+        
+        .item__text {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .item__title {
+            font-weight: 600;
+            text-align: center;
+            line-height: 158%;
+        }
+        
+        .item__subtitle {
+            color: #2D2D2D;
+            line-height: 150%;
+            margin-top: 15px;
+            text-align: center;
+        }
+        /* -----Цитата----- */
+        
+        .main__quote {
+            background-color: #ECE7FB;
+        }
+        
+        .quote__block {
+            display: flex;
+            align-items: center;
+            padding: 50px 224.5px;
+        }
+        
+        .quote__text {
+            margin-left: 60px;
+        }
+        
+        .text__b {
+            margin-top: 20px;
+            line-height: 178%;
+            font-weight: 600;
+        }
+        
+        .text__o {
+            margin-top: 40px;
+            color: #2D2D2D;
+        }
+        /* -----Блок "связаться с нами"----- */
+        
+        .main__contact {
+            display: flex;
+            padding: 60px 160px;
+        }
+        
+        .contact__text {
+            margin-right: 100px;
+        }
+        
+        .contact__title {
+            line-height: 112%;
+        }
+        
+        .contact__subtitle {
+            margin-top: 30px;
+            line-height: 178%;
+        }
+        
+        .contact__button {
+            margin-top: 40px;
+        }
+        /* -----Футер----- */
+        
+        .container__footer {}
+        /* Первая часть футера */
+        
+        .first__half {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer {
+            display: flex;
+            padding: 70px 80.5px;
+        }
+        
+        .footer__logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo__text {
+            font-weight: bold;
+        }
+        
+        .footer__input {
+            margin-top: 75px;
+        }
+        
+        label {
+            display: block;
+        }
+        
+        input[type="email"] {
+            border: 1px solid #D0D0D0;
+            border-radius: 10px;
+            margin-top: 12px;
+        }
+        
+        .placeholder__text {
+            padding-top: 11px;
+            padding-bottom: 11px;
+            padding-left: 20px;
+            padding-right: 71px;
+            font-size: 18px;
+            color: #2D2D2D;
+        }
+        
+        .submit__text {
+            padding: 11px 31.5px;
+            background-color: #3366FF;
+            color: white;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+        
+        .footer__privacy {
+            display: flex;
+            margin-top: 33px;
+        }
+        
+        .privacy__text {
+            margin-right: 30px;
+            font-weight: 600;
+        }
+        
+        .privacy__text:nth-child(3) {
+            margin-right: 0px;
+        }
+        /* Вторая часть футера */
+        
+        .second__half {
+            margin-left: 233px;
+        }
+        
+        .footer__menu {
+            display: flex;
+        }
+        
+        .menu__text {
+            margin-right: 60px;
+        }
+        
+        .text__item {
+            padding-top: 16px;
+        }
+        
+        .menu__text:nth-child(3) {
+            margin-right: 0px;
+        }
+        
+        .footer__social {
+            margin-top: 99px;
+        }
+        
+        .logo__social {
+            margin-left: 237px;
+        }
+        /* -----Адаптивность----- */
+        /* 1200px */
+        
+        @media screen and (max-width:1200px) {
+            .wrapper {
+                max-width: 1140px;
+            }
+            .second__half {
+                margin-left: 100px;
+            }
+        }
+        /* 1199px */
+        
+        @media screen and (max-width:1199px) {
+            .wrapper {
+                max-width: 960px;
+            }
+            .hi__fixed img {
+                width: 50%;
+                height: 100%;
+            }
+            .quote__block {
+                padding: 50px 184.5px;
+            }
+            .hi__img {
+                width: 100%;
+                height: 100%;
+            }
+            .quote__logo {
+                width: 20%;
+                height: 100%;
+            }
+            .author__img {
+                width: 40%;
+                height: 100%;
+            }
+        }
+        /* 991px */
+        
+        @media screen and (max-width:991px) {
+            .wrapper {
+                width: 720px;
+            }
+            .hi__text {
+                margin-right: 64px;
+            }
+            .video {
+                width: 80%;
+                height: auto;
+            }
+            .main__features {
+                padding: 0px;
+            }
+            .features__sponcores img {
+                width: 110%;
+                height: 100%;
+            }
+            .features__list {
+                padding: 46px 0px;
+            }
+            .quote__block {
+                padding: 30px 154.5px;
+            }
+            .quote__text {
+                margin-left: 40px;
+            }
+            .list__item {
+                margin-right: 30px;
+            }
+            .text {
+                font-size: 15px;
+            }
+            .author__img {
+                width: 40%;
+                height: 100%;
+            }
+            .main__contact {
+                padding: 60px 90px;
+            }
+            .hi__img {
+                width: 60%;
+                height: 100%;
+            }
+            .title {
+                font-size: 40px;
+            }
+            .placeholder__text {
+                padding-right: 0px;
+            }
+            .submit__text {
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+            .privacy__text {
+                font-size: 16px;
+            }
+            .button {
+                font-size: 16px;
+            }
+            .logo__social {
+                margin-left: 0px;
+            }
+        }
+        /* 767px */
+        
+        @media screen and (max-width:767px) {
+            .wrapper {
+                width: 540px;
+            }
